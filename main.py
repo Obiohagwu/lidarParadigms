@@ -35,6 +35,9 @@ class Plane3D(Point3D):
     def getDistance(self):
         return abs(self.a * self.x + self.b * self.y + self.c * self.z) / math.sqrt(self.a ** 2 + self.b ** 2 + self.c ** 2)
 
+
+
+
     
 if __name__ == "__main__":
     plane = Plane3D(1, 2, 3, 4, 5, 6)
