@@ -22,17 +22,11 @@ public class Point3D {
         return z;
     }
 
-    public double distance(Point3D other) {
-        double dx = x - other.x;
-        double dy = y - other.y;
-        double dz = z - other.z;
-        return Math.sqrt(dx * dx + dy * dy + dz * dz);
-    }
 
     public static void main(String[] args) {
         Point3D p1 = new Point3D(1, 2, 3);
         Point3D p2 = new Point3D(4, 5, 6);
-        System.out.println(p1.distance(p2));
+        System.out.println(p1.getX() , p1.getY(), p1.getZ());
     }
 }
 
