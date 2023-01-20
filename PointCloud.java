@@ -64,7 +64,7 @@ public class PointCloud {
     }
 
     public static void main(String[] args) {
-        PointCloud cloud = new PointCloud("points.xyz");
+        PointCloud cloud = new PointCloud("clouds/PointCloud1.xyz");
         Point3D point = cloud.getPoint();
         cloud.addPoint(new Point3D(1, 2, 3));
         cloud.save("new_points.xyz");
