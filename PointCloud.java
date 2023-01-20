@@ -13,16 +13,26 @@ public class PointCloud {
             String line;
             while ((line = br.readLine()) != null) {
                 String[] coordinates = line.split(" ");
-                Point3D point = new Point3D(Double.parseDouble(coordinates[0]),
-                                            Double.parseDouble(coordinates[1]),
-                                            Double.parseDouble(coordinates[2]));
-                points.add(point);
+                if (coordinates.length != 3) {
+                    System.out.println("Invalid input: " + line);
+                    continue;
+                }
+                try {
+                    double x = Double.parseDouble(coordinates[0]);
+                    double y = Double.parseDouble(coordinates[1]);
+                    double z = Double.parseDouble(coordinates[2]);
+                    Point3D point = new Point3D(x, y, z);
+                    points.add(point);
+                } catch (NumberFormatException e) {
+                    System.out.println("Invalid input: " + line);
+                }
             }
             br.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
+    
 
     // Empty constructor that constructs an empty point cloud
     public PointCloud() {
