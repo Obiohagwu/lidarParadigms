@@ -1,5 +1,6 @@
 
-
+// Michael Ohagwu
+// 300074813
 
 import java.lang.Math;
 
@@ -28,7 +29,8 @@ public class Plane3D extends Point3D {
         this.d = d;
     }
 
-    // getDistance method that returns the distance from a point to the plane
+
+    // getDistance method that returns the distance from a point to the plane. Equation from internet (wikipedia)
     public double getDistance(Point3D pt) {
         return (a * pt.getX() + b * pt.getY() + c * pt.getZ() + d) / Math.sqrt(a * a + b * b + c * c);
     }
@@ -45,6 +47,8 @@ public class Plane3D extends Point3D {
         
         double distance1 = plane1.getDistance(new Point3D(10,10,10));
         double distance2 = plane2.getDistance(new Point3D(10,10,10));
+        System.out.println(distance1);
+        System.out.println(distance2);
         
     }
 }

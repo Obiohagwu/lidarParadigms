@@ -1,3 +1,6 @@
+// Michael Ohagwu
+// 300074813
+
 
 public class Point3D {
     private double x;
@@ -22,11 +25,8 @@ public class Point3D {
         return z;
     }
 
-
-    public static void main(String[] args) {
-        Point3D p1 = new Point3D(1, 2, 3);
-        Point3D p2 = new Point3D(4, 5, 6);
-        //System.out.println(p1.getX() , p1.getY(), p1.getZ());
+    public String toString() {
+        return "(" + x + ", " + y + ", " + z + ")";
     }
 }
 
