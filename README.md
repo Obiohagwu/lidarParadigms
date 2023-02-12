@@ -2,7 +2,7 @@
 Implementing a lidar RANSAC algorithm in multiple paradigms.
 
 ## Task
-We are given three point clouds as input files and are asked to implement a ransac algorithm for determining dominant planes (3x) for each input cloud, and usbtracting from the initial input cloud, the points belonging to a given pointcloud.
+We are given three point clouds as input files and are asked to implement a ransac algorithm for determining dominant planes (3x) for each input cloud, and susbtracting from the initial input cloud, the points belonging to a given pointcloud.
 
 An example of an input cloud visualised in 3D:
 <img align="center" width="1000" alt="Screen Shot 2023-02-08 at 1 08 51 PM" src="https://user-images.githubusercontent.com/73560826/217615590-67789697-1077-4a9a-8206-9c589571c623.png">
